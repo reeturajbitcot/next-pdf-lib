@@ -14,21 +14,6 @@ const styles = StyleSheet.create({
   }
 });
 
-const pdfViewer = document.querySelector("pdf-viewer");
-const shadowRoot = pdfViewer?.shadowRoot;
-console.log("Shadow root:", shadowRoot);
-
-if (shadowRoot) {
-  const toolbar = shadowRoot.querySelector("#toolbar");
-  if (toolbar) {
-    toolbar.style.display = "none";
-  } else {
-    console.warn("Toolbar not found inside shadow root.");
-  }
-} else {
-  console.warn("Shadow root not accessible.");
-}
-
 // Create Document Component
 export const MyDocument = () => (
   <Document>

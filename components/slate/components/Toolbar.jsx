@@ -6,7 +6,8 @@ const Toolbar = React.forwardRef(({ className, ...props }, ref) => (
     {...props}
     ref={ref}
     className={cn(
-      'flex items-center gap-1 p-2 border-b bg-white',
+      'flex items-center gap-2 p-3 rounded-lg border bg-white',
+      'hover:border-gray-300 transition-colors duration-200',
       className
     )}
   />
